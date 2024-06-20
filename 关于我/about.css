@@ -1,0 +1,141 @@
+/* 全局样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url("../image/背景.jpg");
+}
+
+/* 头部样式 */
+header {
+    color: #0c0c0cca;
+    text-align: center;
+    padding: 20px;
+    font-size: 120%;
+}
+
+header h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #1d1c1ce6;
+    padding: 5px 10px;
+}
+
+nav a.active {
+    background: #fcfcfc;
+}
+
+/* 通用部分样式 */
+.section {
+    margin: 20px auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    max-width: 1000px;
+    width: 120%;
+    text-align: center; /* 使h2标题居中 */
+}
+
+.section h2 {
+    margin-bottom: 20px; /* 与内容保持一定间距 */
+}
+
+/* .content-wrapper样式 */
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content: center; /* 水平居中 */
+    flex-direction: row; /* 水平排列子元素 */
+}
+
+/* 图片和文本容器样式 */
+.personality-images, .hometown-images,
+.personality-text, .hometown-text {
+    flex: 1; /* 允许伸缩 */
+    padding: 10px; /* 内边距 */
+    box-sizing: border-box; /* 边框计算在宽度内 */
+}
+
+/* 图片样式 */
+.personality-images img, .hometown-images img {
+    max-width: 280px; /* 最大宽度为容器宽度 */
+    height: 200px; /* 高度自适应 */
+    margin: 5px; /* 外边距 */
+    border-radius: 5px; /* 圆角 */
+}
+
+/* 调整图片和文本的宽度比例 */
+.personality-images, .hometown-images {
+    flex-basis: 50%; /* 初始宽度设为50% */
+    text-align: center; /* 图片居中显示 */
+}
+
+.personality-text, .hometown-text {
+    flex-basis: 50%; /* 初始宽度设为50% */
+    text-align: left; /* 文本左对齐 */
+}
+
+/* 爱好区域样式 */
+#hobbies {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.hobby {
+    flex: 1; /* 爱好部分平分空间 */
+    padding: 20px;
+}
+
+.hobby-text {
+    order: -1; /* 将文字放在图片上方 */
+}
+
+.hobby-images {
+    display: flex;
+    justify-content: space-between; /* 图片之间平均分布空间 */
+    margin-top: 20px; /* 图片与文字的间距 */
+}
+
+.hobby-images img {
+    width:20%; /* 减去图片之间的间距 */
+    margin-right: 10px; /* 图片之间的间距 */
+    border-radius: 5px;
+}
+
+.hobby-images img:last-child {
+    margin-right: 0; /* 去除最后一个图片的右边距 */
+}
+
+/* 页脚样式 */
+footer {
+    padding: 1em 0;
+    text-align: center;
+    color: #212020e0;
+    margin-top: 20px;
+}
+
+
+.clear {
+    clear: both;
+}

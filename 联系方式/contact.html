@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我</title>
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <header>
+        <h1>welcome to my page</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html" >首页</a></li>
+                <li><a href="../关于我/about.html">关于我</a></li>
+                <li><a href="../课程/project.html">课程</a></li>
+                <li><a href="../图集/picture.html">图集</a></li>
+                <li><a href="../联系方式/contact.html" class="active">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact-container">
+        <section class="contact-info">
+            <h2>联系信息</h2>
+            <p>姓名：谯喆</p>
+            <p>邮箱：qz13590933605@163.com</p>
+            <p>电话：15876797675</p>
+            <p>地址：中南财经政法大学南湖校区</p>
+        </section>
+        <section class="contact-form">
+            <h2>发送消息</h2>
+            <form action="#" method="post">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">邮箱：</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">消息：</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">发送</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p> 2024 谯喆</p>
+    </footer>
+</body>
+</html>

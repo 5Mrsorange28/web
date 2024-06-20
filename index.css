@@ -1,0 +1,104 @@
+/* 全局样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: url("./image/背景.jpg");
+    font-size: 120%;
+}
+
+/* 头部样式 */
+header {
+    color: #141414d2;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #141414d2;
+    padding: 5px 10px;
+}
+
+nav a.active {
+    background: #f7f6f6;
+}
+
+/* 主要内容区域 */
+main {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+}
+
+/* 个人照片样式 */
+.profile-photo {
+    position: absolute; /* 绝对定位 */
+    top: 30px; /* 距离顶部20px */
+    right: 30px; /* 距离右侧20px */
+    width: 180px; /* 根据需要调整 */
+    border-radius: 50%; /* 圆形照片 */
+    border: 3px solid #333; /* 照片边框 */
+}
+
+.profile-photo img {
+    width: 100%;
+    border-radius: 50%; /* 圆形照片 */
+    display: block; /* 清除img的默认display属性 */
+}
+
+/* 简历表格样式 */
+#resume {
+    margin-right: 180px; /* 留出照片的空间 */
+    position: relative; /* 相对定位 */
+}
+
+#resume h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #e8f00d0c;
+    width: 30%; /* 固定列宽 */
+}
+
+/* 页脚样式 */
+footer {
+    height: 100px;
+    color: #202020db;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
